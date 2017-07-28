@@ -11,6 +11,7 @@ FROM alpine:3.4
 
 MAINTAINER Jim Smyth <jim@trailswehike.com>
 
+ENV ANSIBLE_LIBRARY /var/lib/ansible/custom_modules
 
 RUN echo "===> Installing sudo to emulate normal OS behavior..."  && \
     apk --update add sudo                                         && \
