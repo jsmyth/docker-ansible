@@ -26,7 +26,11 @@ RUN echo "===> Installing sudo to emulate normal OS behavior..."  && \
     \
     echo "===> Installing Ansible..."  && \
     pip install ansible                && \
-    pip install dnspython              && \
+    \
+    \
+    echo "===> Installing Custom Reqs..." && \
+    pip install dnspython                 && \
+    pip install netaddr                   && \
     \
     \
     echo "===> Installing handy tools (not absolutely required)..."  && \
