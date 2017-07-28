@@ -31,6 +31,7 @@ RUN echo "===> Installing sudo to emulate normal OS behavior..."  && \
     echo "===> Installing Custom Reqs..." && \
     pip install dnspython                 && \
     pip install netaddr                   && \
+    pip install shade                     && \
     \
     \
     echo "===> Installing handy tools (not absolutely required)..."  && \
