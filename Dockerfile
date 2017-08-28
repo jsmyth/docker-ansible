@@ -60,6 +60,8 @@ RUN echo "===> Installing sudo to emulate normal OS behavior..."  && \
     mkdir -p /etc/ansible                        && \
     echo 'localhost' > /etc/ansible/hosts
 
+# Infoblox Python Library
+ADD https://raw.githubusercontent.com/Infoblox-Development/Infoblox-API-Python/b0c356fa661b6c445ed49691ba75efdfd5932e9a/infoblox.py /usr/lib/python2.7
 
 # default command: display Ansible version
 CMD [ "ansible-playbook", "--version" ]
