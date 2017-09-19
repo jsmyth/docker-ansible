@@ -64,5 +64,8 @@ RUN echo "===> Installing sudo to emulate normal OS behavior..."  && \
 ADD https://raw.githubusercontent.com/Infoblox-Development/Infoblox-API-Python/b0c356fa661b6c445ed49691ba75efdfd5932e9a/infoblox.py /usr/lib/python2.7
 ADD https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/openstack.py /etc/ansible/inventory/
 
+# Make the openstack.py executable
+RUN chmod +x /etc/ansible/inventory/openstack.py
+
 # default command: display Ansible version
 CMD [ "ansible-playbook", "--version" ]
