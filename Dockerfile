@@ -63,7 +63,7 @@ RUN echo "===> Installing sudo to emulate normal OS behavior..."  && \
 # Infoblox Python Library
 ADD https://raw.githubusercontent.com/Infoblox-Development/Infoblox-API-Python/b0c356fa661b6c445ed49691ba75efdfd5932e9a/infoblox.py /usr/lib/python2.7
 
-# Openstack Inventory and Config Files
+# Openstack Inventory Script
 ADD https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/openstack.py /etc/ansible/
 
 # Make the openstack.py executable
