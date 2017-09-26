@@ -65,7 +65,6 @@ ADD https://raw.githubusercontent.com/Infoblox-Development/Infoblox-API-Python/b
 
 # Openstack Inventory and Config Files
 ADD https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/openstack.py /etc/ansible/
-ADD https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/openstack.yml /etc/ansible/
 
 # Make the openstack.py executable
 RUN chmod +x /etc/ansible/inventory/openstack.py
